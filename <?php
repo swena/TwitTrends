@@ -1,0 +1,14 @@
+<?php
+if(isset($_SERVER['x-amz-sns-message-type']) && $_SERVER['x-amz-sns-message-type'] == 'SubscriptionConfirmation')
+{
+	$postBody = file_get_contents('php://input');
+
+	// JSON decode the body to an array of message data
+	$message = json_decode($postBody, true);
+	print_r($message);
+}
+else if (isset($_SERVER['x-amz-sns-message-type']) && $_SERVER['x-amz-sns-message-type'] == 'Notification')
+{
+	print "ABCHJSKJA";
+}
+?>

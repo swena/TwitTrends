@@ -1,0 +1,19 @@
+[2016-11-21 13:40:56,266][INFO ][node                     ] [Cecelia Reyes] version[2.4.1], pid[45411], build[c67dc32/2016-09-27T18:57:55Z]
+[2016-11-21 13:40:56,270][INFO ][node                     ] [Cecelia Reyes] initializing ...
+[2016-11-21 13:40:58,129][INFO ][plugins                  ] [Cecelia Reyes] modules [reindex, lang-expression, lang-groovy], plugins [], sites []
+[2016-11-21 13:40:58,246][INFO ][env                      ] [Cecelia Reyes] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [19.1gb], net total_space [111.8gb], spins? [unknown], types [hfs]
+[2016-11-21 13:40:58,247][INFO ][env                      ] [Cecelia Reyes] heap size [990.7mb], compressed ordinary object pointers [true]
+[2016-11-21 13:40:58,248][WARN ][env                      ] [Cecelia Reyes] max file descriptors [10240] for elasticsearch process likely too low, consider increasing to at least [65536]
+[2016-11-21 13:41:04,940][INFO ][node                     ] [Cecelia Reyes] initialized
+[2016-11-21 13:41:04,940][INFO ][node                     ] [Cecelia Reyes] starting ...
+[2016-11-21 13:41:05,240][INFO ][transport                ] [Cecelia Reyes] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-11-21 13:41:05,258][INFO ][discovery                ] [Cecelia Reyes] elasticsearch/_qjtRlzXTLi6GkYCzuaX2g
+[2016-11-21 13:41:08,316][INFO ][cluster.service          ] [Cecelia Reyes] new_master {Cecelia Reyes}{_qjtRlzXTLi6GkYCzuaX2g}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-11-21 13:41:08,340][INFO ][http                     ] [Cecelia Reyes] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-11-21 13:41:08,341][INFO ][node                     ] [Cecelia Reyes] started
+[2016-11-21 13:41:08,442][INFO ][gateway                  ] [Cecelia Reyes] recovered [1] indices into cluster_state
+[2016-11-21 13:41:09,564][INFO ][cluster.routing.allocation] [Cecelia Reyes] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[tweets][2]] ...]).
+[2016-11-21 13:44:13,161][INFO ][node                     ] [Cecelia Reyes] stopping ...
+[2016-11-21 13:44:13,319][INFO ][node                     ] [Cecelia Reyes] stopped
+[2016-11-21 13:44:13,319][INFO ][node                     ] [Cecelia Reyes] closing ...
+[2016-11-21 13:44:13,336][INFO ][node                     ] [Cecelia Reyes] closed
