@@ -1,6 +1,6 @@
 <html>
 <head>
-	<!-- AIzaSyB45rLge0qJX25y20ejv_B9iJG-mHLwt5E -->
+
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
 
@@ -28,8 +28,8 @@
                 'region' => 'us-west-2',
                 'version' => 'latest',
                 'credentials' => array(
-                    'key'    => 'AKIAJI4AYP3LYDSTYBIA',
-                    'secret' => '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',
+                    'key'    => 'XXXXXX',
+                    'secret' => 'XXXXXX',
                 )
             );
 	
@@ -82,8 +82,8 @@
 					'region' => 'us-west-2',
                     'version' => 'latest',
                     'credentials' => [
-                        'key' => 'AKIAIZ2OQ2QMUFT2525A',
-                        'secret' => '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'
+                        'key' => 'XXXXXX',
+                        'secret' => 'XXXXXX'
                     ]
 	));
 	if(isset($_POST['x-amz-sns-message-type']) && $_POST['x-amz-sns-message-type'] == 'SubscriptionConfirmation')
@@ -110,7 +110,7 @@
 
 	/**********Sentiment************/
 	/*require_once 'alchemyapi_php/alchemyapi.php';
-	$alchemyapi = new AlchemyAPI("1f485fe6acc0cab1d0a4ca319a95f1f8c7d335b9");
+	$alchemyapi = new AlchemyAPI("XXXXXX");
 
 	$myText = "Thank you so much for naming us the Best Brewery in South Florida, according toâ€¦ https://t.co/usZRnRAWTs";
 	$response = $alchemyapi->sentiment("text", addslashes($myText), null);
