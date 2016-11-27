@@ -10,8 +10,8 @@ $client = SnsClient::factory(array(
                     'region' => 'us-west-2',
                     'version' => 'latest',
                     'credentials' => [
-                        'key' => 'AKIAIZ2OQ2QMUFT2525A',
-                        'secret' => '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'
+                        'key' => 'XXXXXX',
+                        'secret' => 'XXXXXX'
                     ]
     )); 
 while(true)
