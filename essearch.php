@@ -3,7 +3,7 @@
 	<!-- AIzaSyB45rLge0qJX25y20ejv_B9iJG-mHLwt5E -->
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=XXXXXX"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=XXXXX"></script>
     <script type="text/javascript">
 		var map, pointarray, heatmap;
 		var latlongData = [];
@@ -113,7 +113,7 @@ if(isset($_POST["submit"]))
 		$key = $_POST["keyword"];
 
 		$query = $es->search([
-						'index' => 'twittrend',
+						'index' => 'twittrends',
     					'type' => 'tweet',
 			            'body' => [
 			                'size'  => 100,
