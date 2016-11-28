@@ -160,19 +160,19 @@ $sqs_credentials = array(
                 'region' => 'us-west-2',
                 'version' => 'latest',
                 'credentials' => array(
-                    'key' => 'AKIAIZ2OQ2QMUFT2525A',
-                    'secret' => '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'
+                    'key' => 'XXXXX',
+                    'secret' => 'XXXXX'
                 )
             );
 
 
-define("TWITTER_CONSUMER_KEY", "iJl4WSh3qRnKeoe31GiH08EJW");
-define("TWITTER_CONSUMER_SECRET", "bFGgDkZLH1LdVVcT1faEtANBOInHjQ2QiYlUKFIQ8O996mI54F");
+define("TWITTER_CONSUMER_KEY", "XXXXX");
+define("TWITTER_CONSUMER_SECRET", "XXXXX");
 
 
 // The OAuth data for the twitter account
-define("OAUTH_TOKEN", "2655667207-aGDwCCxdnH3fA2diZCE5zM0kaRJNWwZ5hnuzZ0P");
-define("OAUTH_SECRET", "iPk97VGMCa078MvJ2EByeXOtczaHH9gdcsDKSRn1HvESp");
+define("OAUTH_TOKEN", "XXXXX");
+define("OAUTH_SECRET", "XXXXX");
 
 // Start streaming
 
@@ -183,8 +183,8 @@ define("OAUTH_SECRET", "iPk97VGMCa078MvJ2EByeXOtczaHH9gdcsDKSRn1HvESp");
                     'region' => 'us-west-2',
                     'version' => 'latest',
                     'credentials' => [
-                        'key' => 'AKIAIZ2OQ2QMUFT2525A',
-                        'secret' => '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'
+                        'key' => 'XXXXX',
+                        'secret' => 'XXXXX'
                     ]
     )); 
     $result = $sns_client->subscribe([
