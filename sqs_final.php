@@ -104,7 +104,7 @@ class MyWork extends Thread{
         $params['hosts'] = array (
             'http://localhost'        // SSL to localhost
         );
-        $es = new Elasticsearch\Client($params);
+        #$es = new Elasticsearch\Client($params);
         
         $long = $tweetjson['long'];
         $lat = $tweetjson['lat'];
@@ -119,7 +119,7 @@ class MyWork extends Thread{
             }
 
         }
-        $enc = json_encode([
+    $enc = json_encode([
                                     'keyword' => $keyword,
                                     'lat' => $lat,
                                     'long' => $long,
@@ -130,7 +130,7 @@ class MyWork extends Thread{
                 'Message' => $enc,
                 'TopicArn' => 'arn:aws:sns:us-west-2:174840842210:TwittTrends'
             ]);
-        $indexed = $es->index([
+        /*$indexed = $es->index([
                                 'index' => 'twittrend',
                                 'type' => 'tweet',
                                 'body' => [
@@ -140,13 +140,13 @@ class MyWork extends Thread{
                                     'tweet' => $tweet,
                                     'sentiment' => $sentiment
                                 ]
-                            ]);
+                            ]);*/
         print "<b> keyword : ".$keyword."</b> <b>sentiment : ".$sentiment."</b> text : ".$tweetjson['text']."<br>";
             
     }
     public function sentimentAnalysis($myText)
     {
-        $alchemyapi = new AlchemyAPI("XXXXXXX");
+        $alchemyapi = new AlchemyAPI("1f485fe6acc0cab1d0a4ca319a95f1f8c7d335b9");
         $response = $alchemyapi->sentiment("text", $myText, null);
         return $response["docSentiment"]["type"];
     }
@@ -160,19 +160,19 @@ $sqs_credentials = array(
                 'region' => 'us-west-2',
                 'version' => 'latest',
                 'credentials' => array(
-                    'key' => 'XXXXXX',
-                    'secret' => 'XXXXXX'
+                    'key' => 'AKIAIZ2OQ2QMUFT2525A',
+                    'secret' => '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'
                 )
             );
 
 
-define("TWITTER_CONSUMER_KEY", "XXXXXX");
-define("TWITTER_CONSUMER_SECRET", "XXXXXX");
+define("TWITTER_CONSUMER_KEY", "iJl4WSh3qRnKeoe31GiH08EJW");
+define("TWITTER_CONSUMER_SECRET", "bFGgDkZLH1LdVVcT1faEtANBOInHjQ2QiYlUKFIQ8O996mI54F");
 
 
 // The OAuth data for the twitter account
-define("OAUTH_TOKEN", "XXXXXX");
-define("OAUTH_SECRET", "XXXXXX");
+define("OAUTH_TOKEN", "2655667207-aGDwCCxdnH3fA2diZCE5zM0kaRJNWwZ5hnuzZ0P");
+define("OAUTH_SECRET", "iPk97VGMCa078MvJ2EByeXOtczaHH9gdcsDKSRn1HvESp");
 
 // Start streaming
 
@@ -183,12 +183,12 @@ define("OAUTH_SECRET", "XXXXXX");
                     'region' => 'us-west-2',
                     'version' => 'latest',
                     'credentials' => [
-                        'key' => 'XXXXXX',
-                        'secret' => 'XXXXXX'
+                        'key' => 'AKIAIZ2OQ2QMUFT2525A',
+                        'secret' => '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'
                     ]
     )); 
     $result = $sns_client->subscribe([
-        'Endpoint' => 'http://custom-env.ihxhacnyr2.us-west-2.elasticbeanstalk.com/snsconfirm.php',
+        'Endpoint' => 'http://custom-env.ihxhacnyr2.us-west-2.elasticbeanstalk.com/newconfirm.php',
         'Protocol' => 'HTTP', // REQUIRED
         'TopicArn' => 'arn:aws:sns:us-west-2:174840842210:TwittTrends', // REQUIRED
     ]);
@@ -216,20 +216,5 @@ while(true)
         #$thread1->run();
     #}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ?>
